@@ -1,5 +1,4 @@
-Para instalar las librerías correr el siguiente comando en el directerio root.
-`npm install`
+Para instalar las librerías correr el siguiente comando en el directerio root:  `npm install`
 # red-turtle
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
