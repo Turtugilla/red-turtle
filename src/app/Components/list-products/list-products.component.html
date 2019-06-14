@@ -1,0 +1,17 @@
+<h2>Lista de Productos</h2>
+
+<button class="btn btn-light" routerLink="/add-product">Add</button>
+
+<ul class="productos">
+  <li *ngFor="let product of products | paginate: {itemsPerPage: 10, currentPage: p}" >
+    <a routerLink="/product-detail/{{product.productId}}">
+      <span class="badge badge-secondary">{{product.productId}}</span>
+       {{product.description | slice:0:22}}
+    </a>
+    <span class="badge badge-danger delete" (click)="delete(product)" title="Delete Product">
+      X
+    </span>
+  </li>
+</ul>
+
+<pagination-controls (pageChange)="p = $event">

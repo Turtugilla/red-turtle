@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<app-menu-bar></app-menu-bar>
+
+<!---<nav class="class" style="text-align:center">
+  <a routerLink='/list-products' style="padding: 10px">List</a>
+  <a routerLink='/dashboard-products' style="padding: 10px">Dashboard</a>
+</nav>-->
+<div [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet = "outlet"></router-outlet>
+</div>
+
+<!---<app-list-products></app-list-products>
+<app-messages></app-messages>
+-->
+
+<app-messages></app-messages> 
+

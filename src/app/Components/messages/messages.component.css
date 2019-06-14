@@ -1,0 +1,52 @@
+h2 {
+    color: red;
+    font-family: Cambria;
+    font-weight: lighter;
+  }
+  body {
+    margin: 2em;
+
+  }
+  body, input[text], button {
+    color: crimson;
+    font-family: "Lucida Console";
+  }
+
+
+  button.show-hide{
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    margin-left: 10px;
+  }
+  
+  button.clear {
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+  }
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+  }
+
+
+  #for-messages{
+      background-color: black;
+      height: 300px;
+      color: white;
+      max-height: 300px;
+      overflow-y: auto;
+  }

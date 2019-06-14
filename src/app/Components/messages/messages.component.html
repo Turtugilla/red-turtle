@@ -1,0 +1,18 @@
+<div class="container">
+  <h2>Messages</h2>
+  <button class="clear" (click)="messageService.clear()">
+    Clear
+  </button>
+
+  <button class="show-hide" (click)="toggle()">
+    {{isShown ? 'Hide' : 'Show'}}
+  </button>
+
+  <div @myInsertRemoveTrigger *ngIf="isShown" class="border border-info rounded" id="for-messages">
+    <div *ngFor='let message of messageService.messages'>
+      <a *ngIf="messageService.messages.length">
+        {{message}}
+      </a>
+    </div>
+  </div>
+</div>
