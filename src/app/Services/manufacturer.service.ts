@@ -11,7 +11,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 export class ManufacturerService {
 	constructor(private messageService: MessageService, private http: HttpClient) {}
 
-	private manufacturerURL = 'http://localhost:8080/Catalogo/webresources/entitys.manufacturer';
+	private manufacturerURL = 'http://f1a61517.ngrok.io/Catalogo/webresources/manufacturer';
 
 	getManufacturer(): Observable<Manufacturer[]> {
 		return this.http

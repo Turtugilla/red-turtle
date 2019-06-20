@@ -11,7 +11,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 export class ProductCodeService {
 	constructor(private messageService: MessageService, private http: HttpClient) {}
 
-	private productCodesURL = 'http://localhost:8080/Catalogo/webresources/entitys.productcode';
+	private productCodesURL = 'http://f1a61517.ngrok.io:8080/Catalogo/webresources/productcode';
 
 	getProductCode(): Observable<ProductCode[]> {
 		return this.http
