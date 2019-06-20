@@ -15,7 +15,7 @@ const httpOptions = {
 export class ProductService {
 	constructor(private messageService: MessageService, private http: HttpClient) {}
 
-	private productURL = 'http://f1a61517.ngrok.io/Catalogo/webresources/product';
+	private productURL = 'http://0665cc7e.ngrok.io/Catalogo/webresources/product';
 
 	getProducts(): Observable<Product[]> {
 		return this.http
